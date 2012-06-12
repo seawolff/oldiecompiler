@@ -1,6 +1,6 @@
 # Less Oldie Compiler
 
-Less Oldie Compiler is a simple, mobile-first solition that reducees time and effort by extracting breakpoint specific styles into less mixins. By doing this Less allows these mixins to be defined at the specified breakpoints and reused for our IE7/8 specific styling. This allows the developer to write less while still keeping his/her styles responsive. 
+Less Oldie Compiler is a simple, mobile-first solution that reduces time and effort by extracting breakpoint specific styles into Less mixins. By doing this Less allows these mixins to be defined at the specified breakpoints and reused for IE7/8 specific styling. This allows the developer to write Less while still keeping his/her styles responsive. 
 
 ## Step1: Mobile
 Write all mobile styling first outside of all breakpoints at the top of your file:
