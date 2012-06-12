@@ -1,0 +1,53 @@
+/* 
+--------------------------
+Mobile Styles
+(Write all your mobile styles here)
+--------------------------
+*/
+.test {
+	background-color:yellow;
+}
+
+
+/* 
+--------------------------
+768 Breakpoint
+(Write all 768 breakpoint styles here)
+--------------------------
+*/
+.sevensixtyeight() {
+	.test {
+		background-color:blue;
+		color:red;
+		margin-top:20px;
+	}
+}
+
+/* 
+--------------------------
+968 Breakpoint
+(Write all 968 breakpoint styles here)
+--------------------------
+*/
+.ninesixty() {
+	.test {
+		background-color:green;
+		position: absolute;
+	}
+}
+
+
+/* 
+--------------------------
+Compiler
+(Do not write breakpoint specific styles)
+--------------------------
+*/
+@media(min-width:768px) {
+	.sevensixtyeight();
+} @media(min-width:960px) {
+	.ninesixty();
+} .oldie {
+	.sevensixtyeight();
+	.ninesixty();
+}
