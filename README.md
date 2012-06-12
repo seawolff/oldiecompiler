@@ -49,7 +49,7 @@ Write all desktop-sized styling inside the designated ninesixty mixin:
 	}
 
 ## Step 4: Go get a beer
-...because all your styling will be imported into the actual media queries at the bottom of your file
+...because all your styling will be imported into the actual media queries as well as your .oldie styles at the bottom of your file. Simple as that.
 
 	/* 
 	--------------------------
