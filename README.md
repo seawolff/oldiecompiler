@@ -65,3 +65,31 @@ Write all desktop-sized styling inside the designated ninesixty mixin:
 		.sevensixtyeight();
 		.ninesixty();
 	}
+
+The result? All of the media queries you wrote plus auto-compiled IE styling. 
+
+	.test {
+	  background-color: yellow;
+	}
+	@media (min-width: 768px) {
+	  .test {
+	    background-color: blue;
+	    color: red;
+	    margin-top: 20px;
+	  }
+	}
+	@media (min-width: 960px) {
+	  .test {
+	    background-color: green;
+	    position: absolute;
+	  }
+	}
+	.oldie .test {
+	  background-color: blue;
+	  color: red;
+	  margin-top: 20px;
+	}
+	.oldie .test {
+	  background-color: green;
+	  position: absolute;
+	}
