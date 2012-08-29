@@ -170,4 +170,4 @@ The result? All of the media queries you wrote plus auto-compiled IE styling.
 
 ## Both Less and Sass templates available:
 * [Less Template](https://github.com/seawolff/oldiecompiler/blob/extra-breakpoints/less-template.less)
-* [Sass Template](https://github.com/seawolff/oldiecompiler/blob/extra-breakpoints/sass-template.less)
+* [Sass Template](https://github.com/seawolff/oldiecompiler/blob/extra-breakpoints/sass-template.sass)
