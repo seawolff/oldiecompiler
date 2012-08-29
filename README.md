@@ -129,32 +129,45 @@ All 2x high rez image styling can be lest in the retina mixin:
 
 The result? All of the media queries you wrote plus auto-compiled IE styling. 
 
-	.test {
-	  background-color: yellow;
+	body.your-body-class #main {
+	  width:100%;
 	}
 	@media (min-width: 768px) {
-	  .test {
-	    background-color: blue;
-	    color: red;
-	    margin-top: 20px;
+	  body.your-body-class #main {
+	    padding:0 20x;
+	    width:748px;
 	  }
 	}
 	@media (min-width: 960px) {
-	  .test {
-	    background-color: green;
-	    position: absolute;
+	  body.your-body-class #main {
+	    width:920px;
 	  }
 	}
-	.oldie .test {
-	  background-color: blue;
-	  color: red;
-	  margin-top: 20px;
+	@media (min-width: 1260px) {
+		body.your-body-class #main {
+			width:1220px;
+		}
 	}
-	.oldie .test {
-	  background-color: green;
-	  position: absolute;
+	@media (min-width: 1920px) {
+		body.your-body-class #main {
+			width:1880px;
+		}
+	}
+	@media (-webkit-min-device-pixel-ratio : 1.5),
+	(min-device-pixel-ratio : 1.5) {
+		body.your-body-class #main #logo {
+			background: url('../images/@2x-rez-logo.png') top left no-repeat transparent;
+			background-size:400px 400px;
+		}
+	}
+	.oldie body.your-body-class #main {
+		padding:0 20x;
+	    width:748px;
+	}
+	.oldie body.your-body-class #main {
+	  width:920px;
 	}
 
 ## Both Less and Sass templates available:
-* [Less Template](less-template.less)
-* [Sass Template](sass-template.less)
+* [Less Template](https://github.com/seawolff/oldiecompiler/blob/extra-breakpoints/less-template.less)
+* [Sass Template](https://github.com/seawolff/oldiecompiler/blob/extra-breakpoints/sass-template.less)
