@@ -1,0 +1,84 @@
+//--------------------------
+//Import Mixins/Variables
+//--------------------------
+
+//@import "mixins";
+//@import "variables";
+
+
+
+//--------------------------
+//Global Styles 
+//(scoped to the body class)
+//--------------------------
+body.your-body-class
+
+
+//--------------------------
+//Mobile Specific Styles 
+//--------------------------
+@mixin foureighty
+	body.your-body-class
+
+
+//--------------------------
+//768 Breakpoint
+//--------------------------
+@mixin sevensixtyeight
+	body.your-body-class
+
+
+//--------------------------
+//968 Breakpoint
+//--------------------------
+@mixin ninesixty
+	body.your-body-class
+
+
+//--------------------------
+//1280 Breakpoint
+//--------------------------
+@mixin tweleveeighty
+	body.your-body-class
+
+
+//--------------------------
+//1920 Breakpoint
+//--------------------------
+@mixin nineteentwenty
+	body.your-body-class
+
+
+//--------------------------
+//Retina 
+//(Write all retina specific image styling here)
+//--------------------------
+@mixin retina
+	body.your-body-class
+
+
+//--------------------------
+//Compiler
+//(Do not write breakpoint specific styles here)
+//--------------------------
+@media (min-width:480px)
+	@include foureighty
+
+@media(min-width:768px)
+	@include sevensixtyeight
+
+@media(min-width:960px)
+	@include ninesixty
+
+@media(min-width:1280px)
+	@include tweleveeighty
+
+@media(min-width:1920px)
+	@include nineteentwenty
+
+@media (-webkit-min-device-pixel-ratio : 1.5),(min-device-pixel-ratio : 1.5)
+	@include retina
+
+.oldie
+	@include sevensixtyeight
+	@include ninesixty
